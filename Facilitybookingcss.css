@@ -1,0 +1,168 @@
+
+    *{   margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Josefin Sans", sans-serif;
+    }
+
+    header {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15)),url("sushant_building.jpeg");   
+        background-repeat: no-repeat;
+        background-size:97rem;
+        
+    }
+
+    nav {
+        width: 100%;
+        height: 15vh;
+        background: rgba(0, 0, 0, 0.2);
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+    }
+
+    nav .logo {
+        width: 25%;
+        text-align: center;
+        /*background: red;*/
+    }
+
+    nav .menu {
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav .menu a {
+        width: 25%;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+    }
+
+    nav .menu a:first-child {
+        color: #ffffff;
+    }
+
+    main {
+        width: 100%;
+        height: 85vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
+
+    section h3 {
+        font-size: 35px;
+        font-weight: 200;
+        letter-spacing: 3px;
+        text-shadow: 1px 1px 2px black;
+    }
+
+    section h1 {
+        margin: 30px 0 20px 0;
+        font-size: 55px;
+        font-weight: 700;
+        text-shadow: 2px 1px 5px black;
+        text-transform: uppercase;
+    }
+
+
+    section a {
+        padding: 12px 30px;
+        border-radius: 4px;
+        outline: none;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 500;
+        text-decoration: none;
+        letter-spacing: 1px;
+        transition: all 0.5s ease;
+    }
+
+    section .btnone {
+        /*background: #00b894;*/
+        background: #fff;
+        color: #000;
+    }
+
+    .btnone:hover {
+        background: rgb(255, 22, 22);
+        color: white;
+    }
+
+    section .btntwo {
+        background: rgb(255, 22, 22);
+        color: white;
+    }
+
+    .btntwo:hover {
+        background: #fff;
+        color: #000;
+    }
+
+    .change_content:after {
+        content: "";
+        animation: changetext 10s infinite linear;
+        color: rgb(255, 22, 22);
+    }
+
+    @keyframes changetext {
+        0% {
+            content: "Art And Architecture";
+        }
+
+        20% {
+            content: "Vatel Hotel And Tourism";
+        }
+
+        35% {
+            content: "Business";
+        }
+        45% {
+            content: "planning And development";
+        }
+
+        60% {
+            content: "Engineering And Technology";
+        }
+
+        80% {
+            content: "Law";
+        }
+        90% {
+            content: "Health Science";
+        }
+
+        100% {
+            content: "Design";
+        }
+    }
+
+@media screen and (max-width:600px)
+{
+    h1,h3{
+        font-size: 36px;
+        line-height: 50px;
+
+    }
+    .change_content{
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .menu{
+        font-size: 10px;
+        line-height: 10px;
+    }
+
+    .btnone,btntwo{
+        font-size: 10px;
+        line-height: 10px;
+    }
+}

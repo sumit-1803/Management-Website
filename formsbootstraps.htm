@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .email {
+            box-sizing: content-box;
+            padding: 36px;
+            margin: 150px;
+            margin-top: 41px;
+            margin-bottom: 150px;
+            border: 5px solid purple;
+            background-color: rgb(237, 229, 244);
+            margin-bottom: -75px;
+        }
+
+        .form-control {
+            border: 2px solid black;
+            margin: auto;
+            padding: 25px;
+        }
+
+        .pass {
+            box-sizing: content-box;
+            padding: 34px;
+            margin: 147px;
+            margin-top: 147px;
+            margin-bottom: -0.5px;
+
+            border: 5px solid purple;
+            background-color: rgb(237, 229, 244);
+        }
+
+        .subbtn,
+        .checkk {
+            margin-left: 147px;
+            margin-bottom: 15px;
+            margin-top: 15px;
+        }
+
+        .outbox {
+            border: 5px solid black;
+            margin: auto;
+            background-color: rgb(250, 227, 250);
+            margin-left: 326px;
+            margin-right: 379px;
+            padding-bottom: 80px;
+            padding-top: 120px;
+        }
+
+        .subbtn {
+            border-radius: 4px;
+            background-color: rgb(237, 182, 237);
+        }
+
+        .subbtn:hover {
+            background-color: rgb(225, 110, 225);
+        }
+        .heading{
+            padding-left: 150px;
+        }
+        .email:hover, .pass:hover , .checkk:hover{
+            background-color: rgb(255, 158, 255);
+        }
+        body{
+            background-color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="outbox">
+            <h1 class="heading">Login page</h1>
+            <div class="email">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter email"><br>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+            </div>
+
+
+            <div class="pass">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+
+
+            <div class="check">
+                <input type="checkbox" class="checkk" id="exampleCheck1">
+                <label class="check" for="exampleCheck1">Check me out</label>
+            </div>
+
+
+            <button type="submit" class="subbtn">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>

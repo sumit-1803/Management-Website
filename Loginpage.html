@@ -1,0 +1,124 @@
+<html lang="en">
+
+<head>
+    <title>Login</title>
+    <style>
+        * {
+            margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Josefin Sans", sans-serif;
+        }
+
+        
+
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+
+        body {
+            font-family: 'Lato', sans-serif;
+            color: #4A4A4A;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            width: 350px;
+            position: relative;
+        }
+
+        form .format::before {
+            font-size: 20px;
+            position: absolute;
+            left: 15px;
+            top: 17px;
+            color: #888888;
+            content: " ";
+            display: block;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .format {
+            align-items: center;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+
+        form .format:nth-child(1)::before {
+            background-image: url('user-icon.png');
+            width: 20px;
+            height: 20px;
+            top: 15px;
+        }
+
+        form .format:nth-child(2)::before {
+            background-image: url('lock-icon.png');
+            width: 16px;
+            height: 16px;
+        }
+
+
+        form input {
+            width: 100%;
+            outline: none;
+            background-color: #fff;
+            border-radius: 4px;
+            border: none;
+            padding: 0.9rem 0.7rem;
+            font-size: 17px;
+            color: #4A4A4A;
+            text-indent: 40px;
+        }
+
+        .bef {
+            color: white;
+        }
+
+        form .btn {
+            outline: none;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+            margin: 0 auto;
+            padding:0.5rem 1.3rem;
+            text-align: center;
+            background-color: rgb(255, 22, 22);;
+            color: #fff;
+            border-radius: 4px;
+            font-size: 17px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bg"><video autoplay muted loop id="myVideo">
+            <source src="Monument Valley - 3.mp4" type="video/mp4">
+        </video></div>
+        
+    <form>
+        <div class="format">
+            <div class="bef"></div>
+            <input type="email" placeholder="Email/Username">
+        </div>
+        <div class="format">
+            <div class="bef"></div>
+            <input type="password" placeholder="Password">
+        </div>
+        <button class="btn">Submit</button>
+
+    </form>
+</body>
+
+</html>
